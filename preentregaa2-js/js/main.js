@@ -25,10 +25,11 @@ function mostrarCarrito() {
     console.log("Carrito de compras:", carritoDeCompras)
 }
 
-// Función para buscar un producto en el carrito de compras
+// Función para buscar un producto en el carrito de compras de manera flexible
 function buscarProducto(nombre) {
-    return carritoDeCompras.find(producto => producto.nombre.toLowerCase() === nombre.toLowerCase())
+    return carritoDeCompras.find(producto => producto.nombre.toLowerCase().includes(nombre.toLowerCase()));
 }
+
 
 // Función para calcular el total del carrito
 function calcularTotal() {
@@ -68,7 +69,7 @@ alert("El total del carrito es: $" + totalCarrito.toFixed(2))
 console.log("Total del carrito:", totalCarrito)
 
 // Buscar un producto en el carrito
-let productoBusqueda = prompt("Ingrese el nombre exacto del producto para buscar en el carrito:")
+let productoBusqueda = prompt("Ingrese el nombre del producto para buscar en el carrito:")
 let productoEncontrado = buscarProducto(productoBusqueda)
 
 if (productoEncontrado) {
