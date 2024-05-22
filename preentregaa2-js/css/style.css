@@ -1,0 +1,18 @@
+body {
+    background-color: #F5F5F7;
+}
+
+.text {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 25px;
+}
+
+.text2 {
+    font-family: "League spartan", sans-serif;
+    font-size: 20px;
+}
+
+.contenedor {
+    padding-left: 100px;
+    border: 3px dotted grey;
+}
