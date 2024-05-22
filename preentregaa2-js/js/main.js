@@ -1,3 +1,7 @@
+// Capturar el nombre del usuario
+let nombreUsuario = prompt("Ingrese su nombre:")
+
+
 // Lista de productos predefinida
 const productosDisponibles = [
     { nombre: "Apple Watch ⌚", precio: 399.99 },
@@ -6,9 +10,6 @@ const productosDisponibles = [
     { nombre: "Airpods Max 🎧", precio: 549.99 },
     { nombre: "IPhone 15 📱", precio: 999.99 }
 ]
-
-// Capturar el nombre del usuario
-let nombreUsuario = prompt("Ingrese su nombre:")
 
 // Crear un array para el carrito de compras
 let carritoDeCompras = []
