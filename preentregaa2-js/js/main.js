@@ -21,7 +21,10 @@ function agregarProducto(producto) {
 
 // Función para mostrar el carrito de compras
 function mostrarCarrito() {
-    let listaProductos = carritoDeCompras.map(producto => `${producto.nombre} ($${producto.precio.toFixed(2)})`).join(", ")
+    // let listaProductos = carritoDeCompras.map(producto => `${producto.nombre} ($${producto.precio.toFixed(2)})`).join(", ")
+    let listaProductos = carritoDeCompras.map(producto => {
+      return producto.nombre + " ($" + producto.precio.toFixed(2) + ")";
+    }).join(", ");
     alert("Carrito de compras de " + nombreUsuario + ": " + listaProductos)
     console.log("Carrito de compras:", carritoDeCompras)
 }
